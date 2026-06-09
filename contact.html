@@ -6,19 +6,21 @@
     <title>Sonnen Apotheke</title>
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <div class="top-bar">
         <div class="container">
-            Pon-Pt 8:30-18:30 | Sob 09:00–13:00 &nbsp;&nbsp; &nbsp;&nbsp;
+            <span>Pon-Pt 8:30-18:30 | Sob 09:00–13:00</span>
             <a href="phonenumber">+49 6171 917770</a>
         </div>
     </div>
 
     <header>
         <div class="header-center">
-            <nav>
+            <button class="mobile-menu-toggle" type="button" aria-label="Menu">☰</button>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Strona główna</a></li>
                     <li><a href="aboutus.html">O nas</a></li>
@@ -35,20 +37,28 @@
             <h2>Zapraszamy do apteki</h2>
             <div class="info">
                 <p><strong>Adres:</strong> Dornbachstraße 34</p>
+                <p><strong>Właścicielka:</strong> Katarzyna Niemiec</p>
                 <p><strong>Telefon:</strong> +49 6171 917770</p>
                 <p><strong>Godziny otwarcia:</strong><br> Pon-Pt 8:30-18:30 <br> Sob 09:00–13:00</p>
             </div>
         </div>
     </section>
-    <section class="map">
-    <div class="container">
-        <h2>Jak do nas dojechać</h2>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d159.57206480393876!2d8.5663803!3d50.2143606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bda86b47442e23%3A0x713bc840b57c95a2!2sSonnen-Apotheke!5e0!3m2!1spl!2spl!4v1780880634562!5m2!1spl!2spl" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</section>
+        <section class="map">
+                <div class="container">
+                    <h2>
+                        Jak do nas dojechać
+                    </h2>
+                    
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d159.57206480393876!2d8.5663803!3d50.2143606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bda86b47442e23%3A0x713bc840b57c95a2!2sSonnen-Apotheke!5e0!3m2!1spl!2spl!4v1780880634562!5m2!1spl!2spl" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+        </section>
 
     <footer>
         <div class="container">
