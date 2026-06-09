@@ -1,5 +1,5 @@
 - Zakladka dostawy + styl + skrypt
-- Oferty > zmienic na Uslugi + skrypt + przekierowanie
+-~~ Oferty > zmienic na Uslugi + skrypt + przekierowanie~~
 - W kontakcie dane + styl
 - O nas, dodac text + styl
 - Uklad dobry, dobrac kolory, ustawienie , skrypt + animacje + logo 
