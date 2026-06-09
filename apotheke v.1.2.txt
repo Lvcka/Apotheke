@@ -4,7 +4,7 @@
 ✓ O nas, dodac text + styl
 - Uklad dobry, dobrac kolory, ustawienie , skrypt + animacje + logo 
 - NaszaApteka miejsce na galerie personelu zostawic + styl + animacja
-✓ Wiecej tlumaczen na stronie Pol, angielski, niemiecki, francuski, hiszpanski, balkanskie, slowacki, czeski.
+- Wiecej tlumaczen na stronie Pol, angielski, niemiecki, francuski, hiszpanski, balkanskie, slowacki, czeski.
 - na glownej w gornym pasku w rogu kafelek z dyzurami zshynchronizowanymi z google i przekierowaniem do mapki googla
 - Dodac miejsce na pelne informacje apteki lacznie z danymi wlascicielki
 - W miejscach przeznaczonych na text zrobic lorem ipsum na kilka lini zeby klientka miala podglad jak to wyglada
