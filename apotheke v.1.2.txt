@@ -1,12 +1,12 @@
-- Zakladka dostawy + styl + skrypt
+✓ Zakladka dostawy + styl + skrypt
 ✓ Oferty > zmienic na Uslugi + skrypt + przekierowanie
 ✓ W kontakcie dane + styl
 ✓ O nas, dodac text + styl
 ✓ Hamburger, responsywność, poprawa google maps
-- Uklad dobry, dobrac kolory, ustawienie , skrypt + animacje + logo 
-- NaszaApteka miejsce na galerie personelu zostawic + styl + animacja
-- Wiecej tlumaczen na stronie Pol, angielski, niemiecki, francuski, hiszpanski, balkanskie, slowacki, czeski.
+✓ Uklad dobry, dobrac kolory, ustawienie , skrypt + animacje + logo (logo do poprawy)
+✓ NaszaApteka miejsce na galerie personelu zostawic + styl + animacja
+✓ Wiecej tlumaczen na stronie Pol, angielski, niemiecki, francuski, hiszpanski, balkanskie, slowacki, czeski.
 ✓ na glownej w gornym pasku w rogu kafelek z dyzurami zshynchronizowanymi z google ((((jeśli chodzi o to u samej góry na zielonym tle)))
 ✓ Dodac miejsce na pelne informacje apteki lacznie z danymi wlascicielki
-? W miejscach przeznaczonych na text zrobic lorem ipsum na kilka lini zeby klientka miala podglad jak to wyglada
-? zrobic przykladowe zdjecia jako placeholdery i dac im jakas animacje na mouseover
+✓ W miejscach przeznaczonych na text zrobic lorem ipsum na kilka lini zeby klientka miala podglad jak to wyglada
+✓ zrobic przykladowe zdjecia jako placeholdery i dac im jakas animacje na mouseover
