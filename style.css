@@ -99,6 +99,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+    font-size: 0.9rem;
 }
 
 .logo img {
@@ -241,6 +242,11 @@ header {
     margin-bottom: 14px;
 }
 
+.card.center-card {
+    justify-self: center;
+    margin: 0 auto;
+    grid-column: 2 / 3;
+}
 .about-us {
     padding: 90px 0;
     background: white;
