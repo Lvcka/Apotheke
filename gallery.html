@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria - Apotheke</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="javascript/gallery_display.js" defer></script>
 </head>
 <body>
  <div class="top-bar">
@@ -16,85 +16,51 @@
     </div>
 
     <header>
-        <div class="header-center">
-            <button class="mobile-menu-toggle" type="button" aria-label="Menu">☰</button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="aboutus.html">O nas</a></li>
-                    <li><a href="https://www.gesund.de/shop" target="_blank">Usługi</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                    <li><a href="gallery.html">Nasza apteka</a></li>
-                </ul>
-            </nav>
+        <div class="container header-content">
+            <div class="watermark watermark-left">
+                <img src="logo2.png" alt="Logo Lewy">
+            </div>
+            <div class="header-center">
+                <button class="mobile-menu-toggle" type="button" aria-label="Menu">☰</button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="aboutus.html">O nas</a></li>
+                        <li><a href="https://www.gesund.de/shop" target="_blank">Usługi</a></li>
+                        <li><a href="contact.html">Kontakt i godziny otwarcia</a></li>
+                        <li><a href="gallery.html">Nasza apteka</a></li>
+                        <li><a href="delivery.html">Dostawy</a></li>
+                        <li><a href="#">Zrealizuj e-receptę</a></li>
+                        <li><a href="#services">Nasze usługi</a></li>
+                        <li><a href="#">Dyżury</a></li>
+                        <li><a href="https://www.gesund.de" target="_blank">gesund.de</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="watermark watermark-right">
+                <img src="logo.png" alt="Logo Prawy">
+            </div>
         </div>
     </header>
 
     <main class="page-content">
         <section class="page-intro">
-            <h1>Galeria</h1>
+            <h1>Nasza apteka</h1>
             <p>Przeglądaj nasze zdjęcia produktów, wnętrz apteki i stylu, który tworzymy na co dzień.</p>
         </section>
 
-        <section class="image-gallery" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; align-items:stretch; margin-top:32px;">
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Naturalne kosmetyki" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Naturalne kosmetyki</h2>
-                    <p style="margin:0; color:#555;">Delikatne formuły do pielęgnacji skóry.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Wnętrze apteki" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Wnętrze apteki</h2>
-                    <p style="margin:0; color:#555;">Przytulna przestrzeń stworzona z myślą o kliencie.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Zdrowie i uroda" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Zdrowie i uroda</h2>
-                    <p style="margin:0; color:#555;">Produkty, które wspierają codzienną pielęgnację.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Ekspozycja produktów" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Ekspozycja produktów</h2>
-                    <p style="margin:0; color:#555;">Przejrzysty układ i łatwy dostęp do najważniejszych kategorii.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Prestige dermokosmetyki" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Prestige dermokosmetyki</h2>
-                    <p style="margin:0; color:#555;">Luksusowe produkty do codziennej pielęgnacji.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Zdrowy styl życia" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Zdrowy styl życia</h2>
-                    <p style="margin:0; color:#555;">Suplementy i akcesoria wspierające aktywność.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Aromaterapia" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Aromaterapia</h2>
-                    <p style="margin:0; color:#555;">Oleje eteryczne i zapachy do relaksu w domu.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Poradnia farmaceutyczna" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Poradnia farmaceutyczna</h2>
-                    <p style="margin:0; color:#555;">Profesjonalne wsparcie dla każdego pacjenta.</p>
-                </button>
-            </article>
-            <article class="gallery-item">
-                <button class="gallery-tile" type="button" aria-label="Zdrowe przekąski" style="width:100%; min-height:200px; display:flex; flex-direction:column; justify-content:flex-end; padding:20px; border:1px solid #ddd; border-radius:16px; background:#fafafa; cursor:pointer; text-align:left;">
-                    <h2 style="margin:0 0 10px; font-size:1.1rem;">Zdrowe przekąski</h2>
-                    <p style="margin:0; color:#555;">Naturalne produkty dla małych i dużych.</p>
-                </button>
-            </article>
+        <section class="image-gallery" id="galleryContainer" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:24px; align-items:stretch; margin-top:32px;">
         </section>
+
+        <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:1000; align-items:center; justify-content:center;">
+            <div style="position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
+                <img id="lightboxImage" src="" alt="" style="max-width:95%; max-height:95%; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,0.6);">
+                <button id="closeLightbox" type="button" style="position:absolute; top:20px; right:20px; background:white; border:none; width:44px; height:44px; border-radius:50%; font-size:28px; cursor:pointer; display:flex; align-items:center; justify-content:center;">&times;</button>
+            </div>
+        </div>
     </main>
 
-        <section class="contact">
+    <section class="contact">
         <div class="container">
             <h2>Zapraszamy do apteki</h2>
             <div class="info">

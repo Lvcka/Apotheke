@@ -6,9 +6,11 @@
     <title>Sonnen Apotheke</title>
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
+    
+
 
     <div class="top-bar">
         <div class="container">
@@ -18,17 +20,30 @@
     </div>
 
     <header>
-        <div class="header-center">
-            <button class="mobile-menu-toggle" type="button" aria-label="Menu">☰</button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="aboutus.html">O nas</a></li>
-                    <li><a href="https://www.gesund.de/shop" target="_blank">Usługi</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                    <li><a href="gallery.html">Nasza apteka</a></li>
-                </ul>
-            </nav>
+        <div class="container header-content">
+            <div class="watermark watermark-left">
+                <img src="logo2.png" alt="Logo Lewy">
+            </div>
+            <div class="header-center">
+                <button class="mobile-menu-toggle" type="button" aria-label="Menu">☰</button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="aboutus.html">O nas</a></li>
+                        <li><a href="https://www.gesund.de/shop" target="_blank">Usługi</a></li>
+                        <li><a href="contact.html">Kontakt i godziny otwarcia</a></li>
+                        <li><a href="gallery.html">Nasza apteka</a></li>
+                        <li><a href="delivery.html">Dostawy</a></li>
+                        <li><a href="#">Zrealizuj e-receptę</a></li>
+                        <li><a href="#services">Nasze usługi</a></li>
+                        <li><a href="#">Dyżury</a></li>
+                        <li><a href="https://www.gesund.de" target="_blank">gesund.de</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="watermark watermark-right">
+                <img src="logo.png" alt="Logo Prawy">
+            </div>
         </div>
     </header>
 
@@ -36,22 +51,39 @@
         <div class="container">
         </div>
     </section>
-    <section class="categories">
+
+    <section id="services" class="categories">
         <div class="container">
             <h2>Nasze Usługi</h2>
             <div class="grid">
-                <div class="card">
-                    <h3>Leki bez recepty</h3>
-                    <p>Przeziębienie, ból, alergia i więcej</p>
-                </div>
-                <div class="card">
-                    <h3>Suplementy i witaminy</h3>
-                    <p>Wsparcie odporności i codziennego zdrowia</p>
-                </div>
-                <div class="card">
-                    <h3>Doradztwo farmaceutyczne</h3>
-                    <p>Pomiary ciśnienia, cukru, konsultacje</p>
-                </div>
+                <a class="card" href="services/cardsport.html">
+                    <h3>Sport & Regeneracja</h3>
+                    <p>Pomoc w regeneracji po wysiłku fizycznym</p>
+                </a>
+                <a class="card" href="services/cardmama.html">
+                    <h3>Mama & Dziecko</h3>
+                    <p>Wsparcie dla matek i dzieci</p>
+                </a>
+                <a class="card" href="services/cardskora.html">
+                    <h3>Skóra & Pielęgnacja</h3>
+                    <p>Opieka i leczenie problemów z skórą</p>
+                </a>
+                 <a class="card" href="services/cardstarzej.html">
+                    <h3>Starzej sie zdrowo</h3>
+                    <p>Wsparcie dla osób starszych</p>
+                </a>
+                <a class="card" href="services/cardrecepty.html">
+                    <h3>Receptury</h3>
+                    <p>Tworzenie leków robionych</p>
+                </a>
+                <a class="card" href="services/cardaroma.html">
+                    <h3>Aromaterapia</h3>
+                    <p>Używanie olejków eterycznych do poprawy zdrowia i relaksu</p>
+                </a>
+                <a class="card center-card" href="services/#.html">
+                    <h3>Zdrowe odżywianie</h3>
+                    <p>Dla większej energii i dobrego samopoczucia: Wspieramy Państwa kompetentnym doradztwem oraz odpowiednio dobranymi suplementami diety dopasowanymi do indywidualnych potrzeb.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -62,21 +94,25 @@
         </div>
     </section>
 
-    <section class="contact">
+     <section class="contact">
         <div class="container">
             <h2>Zapraszamy do apteki</h2>
             <div class="info">
                 <p><strong>Adres:</strong> Dornbachstraße 34</p>
                 <p><strong>Telefon:</strong> +49 6171 917770</p>
+                <p><strong>Email:</strong> example@email.com</p>
+                <p><strong>Apteka:</strong> Sonnen Apotheke</p>
+                <p><strong>Właściciel:</strong> Katarzyna Niemiec, Apothekerin&Inhaberin</p>
                 <p><strong>Godziny otwarcia:</strong><br> Pon-Pt 8:30-18:30 <br> Sob 09:00–13:00</p>
             </div>
         </div>
-    </section>
 
     <footer>
         <div class="container">
             <p>&copy;2026 Sonnen Apotheke</p>
         </div>
     </footer>
+</body>
+</html>
 </body>
 </html>
