@@ -129,10 +129,10 @@ header {
 }
 
 .hero {
-    background: url('oma.png') no-repeat center/cover;
+    background: url('welcome.jpg') no-repeat center/cover;
     position: relative;
+    height: 680px;
     width: 100%;
-    height: 830px;
     color: white;
     display: flex;
     flex-direction: column;
