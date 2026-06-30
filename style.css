@@ -131,7 +131,6 @@ header {
     position: relative;
     height: 680px;
     width: 100%;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,27 +138,11 @@ header {
     text-align: center;
     overflow: hidden;
 }
-
-.delivery-intro {
-    background: url('car.png') no-repeat center/cover;
-    position: relative;
-    width: 100%;
-    height: 700px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-}
-
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
     z-index: 0;
 }
 
@@ -172,9 +155,19 @@ header {
 }
 
 .hero h2 {
-    font-size: 1.6rem;
+    font-size: 4.5rem;
     margin-bottom: 16px;
     z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.fade-in-image {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .hero p {
@@ -199,6 +192,20 @@ header {
 .hero a:hover {
     background: #f0f0f0;
     transform: translateY(-4px);
+}
+
+.delivery-intro {
+    background: url('car.png') no-repeat center/cover;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .categories {
@@ -238,6 +245,56 @@ header {
 .card h3 {
     color: var(--primary-green);
     margin-bottom: 14px;
+}
+
+.partnership {
+    padding: 45px 0;
+    text-align: center;
+}
+
+.partnership .partnership-info {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px 20px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 12px;
+}
+
+.partnership h2 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--primary-green), #3cb371);
+    color: white;
+}
+
+.partnership p {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-green), #3cb371);
+    color: white; 
+}
+
+.partnership .partnership-info h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.partnership .partnership-info img {
+    display: block;
+    width: 48%; 
+    max-width: 420px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.partnership .partnership-info img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(46, 139, 87, 0.12);
 }
 
 .card.center-card {
@@ -451,6 +508,10 @@ footer {
         gap: 24px;
         padding: 10px 0;
     }
+
+    .partnership .partnership-info img {
+        width: 180px; 
+    }
 }
 
 @media (min-width: 993px) {
@@ -551,6 +612,14 @@ footer {
     
     .hero h2 {
         font-size: 2rem;
+    }
+
+    .partnership .partnership-info {
+        padding: 36px 24px;
+        gap: 26px;
+    }
+    .partnership .partnership-info img {
+        width: 220px; 
     }
 }
 
