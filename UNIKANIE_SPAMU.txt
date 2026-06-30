@@ -1,0 +1,90 @@
+═══════════════════════════════════════════════════════════════════════════════
+  JAK UNIKNĄĆ SPAMU - KONFIGURACJA SMARTHOST.PL
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEM: Emaile trafiają do SPAM/Junk instead of Inbox
+
+ROZWIĄZANIE: Skonfiguruj SPF, DKIM i DMARC w panelu Smarthost
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 1: SPF RECORD (Sender Policy Framework)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Zaloguj się do panelu Smarthost: https://panel.smarthost.pl
+2. Przejdź do: Domeny > Twoja domena > DNS
+3. Dodaj nowy rekord SPF:
+   
+   Typ: TXT
+   Nazwa: @ (lub domains.pl - zależy od interfejsu)
+   Wartość: v=spf1 include:smarthost.pl ~all
+   
+   ⚠️ Jeśli już masz SPF record, EDYTUJ go zamiast dodawać nowy:
+      Stary:  v=spf1 include:smtp.example.com ~all
+      Nowy:   v=spf1 include:smarthost.pl ~all
+
+4. Zapisz i czekaj 1-24h na propagację DNS
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 2: DKIM (DomainKeys Identified Mail)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. W panelu Smarthost przejdź do: Email > Ustawienia DKIM
+2. Kliknij "Wygeneruj DKIM"
+3. Smarthost automatycznie doda rekordy DNS
+4. Czekaj aż status będzie "Aktywny" (do 24h)
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 3: DMARC (Domain-based Message Authentication)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. W panelu Smarthost przejdź do: Domeny > Twoja domena > DNS
+2. Dodaj nowy rekord TXT:
+   
+   Typ: TXT
+   Nazwa: _dmarc
+   Wartość: v=DMARC1; p=none; rua=mailto:pxluka@gmail.com; ruf=mailto:pxluka@gmail.com
+
+3. Zapisz i czekaj na propagację DNS
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 4: TESTOWANIE
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Poczekaj 24-48h na pełną propagację DNS
+2. Wyślij test-wiadomość przez formularz
+3. Sprawdź czy Email trafia do Inbox (nie Spam)
+
+Testery online:
+- MXToolbox: https://mxtoolbox.com/spf.aspx
+- MailTester: https://www.mail-tester.com/
+- DMARCian: https://dmarc.postmark.app/
+
+═══════════════════════════════════════════════════════════════════════════════
+DODATKOWE WSKAZÓWKI
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Już dodałem prawidłowe headers w send-email.php
+✓ Emaile mają czytelną strukturę HTML
+✓ Walidacja formularza zapobiega spam-like danym
+
+Jeśli DALEJ trafia do spamu:
+1. Upewnij się że SPF/DKIM/DMARC są aktywne (status "Aktywny" w panelu)
+2. Czekaj minimum 48h na propagację
+3. Sprawdź czy Return-Path jest prawidłowy
+4. Kontaktuj Smarthost support - mogą sprawdzić reputację IP
+
+═══════════════════════════════════════════════════════════════════════════════
+STRUKTURA EMAILA (już skonfigurowana)
+═══════════════════════════════════════════════════════════════════════════════
+
+send-email.php zawiera:
+✓ Prawidłowe headers MIME
+✓ From: Email nadawcy
+✓ Reply-To: Email nadawcy (ułatwia odpowiedź)
+✓ Return-Path: Email docelowy
+✓ X-Mailer: Custom identifier
+✓ Priority: Normal (nie junk)
+✓ HTML Body: Czytelna, dobrze sformatowana zawartość
+✓ Walidacja: Email, Name, Message
+
+═══════════════════════════════════════════════════════════════════════════════
